@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>易班技术开发部</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	.p1
+	{
+			float:left;
+			width:250px;
+			
+	}
+	.t1
+	{
+		text-align: center;
+		padding-right: 3cm;
+		color:#1D4F5E;
+		font-family:"幼圆";
+		font-weight:900;
+	}
+	.t2
+	{
+		font-family:'隶书';
+		font-size: 25px;
+		color:#1D4F5E;
+	}
+	.t3
+	{
+		color:#168BA3;
+		font-weight: lighter;
+	}
+	.t4
+	{
+		font-family: "仿宋";
+		font-size: 25px;
+		padding-top: 1cm;
+		color:cadetblue;
+		font-weight: 800;
+	}
+	.t5
+	{
+		color:black;
+		font-weight:lighter;
+		opacity:10;
+	}
+	.t6
+	{
+		color:darkcyan;
+		font-size: 20px;
+		font-weight: bolder;
+	}
+	.back
+	{
+		background-repeat: no-repeat;
+		background-size:100% 100%;
+		background-attachment: fixed;
+	}
+	.b1
+	{
+		border-style: solid;
+		border-width: 3px;
+	 	border-color: #A5C3BE;
+		border-top-right-radius:  10px;
+		border-bottom-right-radius: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		width:30cm;
+		height: 6cm;
+		margin-top: 2cm;
+		margin-left: 9cm;
+	}
+	.b2
+	{
+		width:4.725cm;
+		height:2cm;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-bottom-color: antiquewhite;
+		margin-left: 20cm;
+		margin-bottom: 1cm;
+	}
+	.b3
+	{
+		border-top-right-radius:  10px;
+		border-bottom-right-radius: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius:10px;
+		display: inline;
+		width: 5cm;
+		height: 4.5cm;
+		float: left;
+		//border-style: solid;
+		//border-width: 0.1px;
+		border-color: aliceblue;
+		background-color: aliceblue;
+		margin-left: 0.5cm;
+		opacity: 0.3;
+		text-align: center;
+		}
+	</style>
+</head>
+<body background="./background1.jpg" class="back" >
+<div class="t1">
+	<td>
+		<img class="p1" src="./logo.png"/>
+		<font class="t1" size="+4">易班发展中心技术开发部</font>
+	</td>
+</div>
+<div class="b1"> 
+	<div  style="width: 6cm;float: left">
+		<p class="t2" align="center">我们是干什么的？</p>
+		<p class="t3" style="padding-top: 0.5cm">易班技术开发部是基于易班平台进行二次开发。利用易班官方提供的接口。获取学生信息，开发方便学生生活的轻应用。本着为学生服务的原则。</p>
+	</div>
+	<div style="width: 22cm;float:right">
+		<p class="t2" align="center" >
+		主要使用的语言和框架
+		</p>
+		<div style="width:10cm; float: left;">
+			<p class="t3"> 后端主要使用java语言进行web开发，使用业内先进的spring boot|MVC框架，实现快速开发。数据库使用MySQL。maven作为依赖管理,构建工具。通过易班的OAuth2.0开放标准获取用户的易班信息。
+学校支持了一台服务器，配置：4G内存，500G储存空间。LNMP：linux nigx Mysql php。
+			</p>
+		</div>
+		<div style="width: 10cm;float:right">
+			<p class="t3">
+				前端采用yeoman生成项目骨架,bower进行前端依赖管理,gulp作为自动构建工具,使用semantic-ui/bootstrap作为框架,界面简洁大方。
+			</p>
+		</div>
+	</div>
+</div>
+<div>
+	<p align="center" style="padding-right: 1.5cm;color:aliceblue">
+	所有项目均开源，采用分布式版本控制系统git，项目都托管在github上.网址是：
+	<a href="https://github.com/upcyiban" target="_blank" style="color: #FBFBFB">https://github.com/upcyiban</a>
+	</p>
+</div>
+<div class="b2">
+	<p class="t4">我们做了什么？</p>
+</div>
+<div class="b3">
+	<p><a href="http://yb.upc.edu.cn:8080/" target="_blank" class="t6">石大易抽奖</a></p>
+	<p class="t5">石大易抽奖解决大学生社团/组织等进行活动在线抽奖吸引同学参与的问题.</p>
+</div>
+<div class="b3">
+	<p><a href="http://yb.upc.edu.cn:8081/" target="_blank"  class="t6">石大易查询</a></p>
+	<p class="t5">
+	石大易查询是为中国石油大学(华东)开发的查询空教室/成绩/课表的一款轻应用.所有数据由石大网络中心提供。
+	<a class="t5" onClick="alert('如果数据不准确，这是网络中心的数据问题，石大易查询只负责显示')"><u>点击查看提醒</u></a>
+	</p>
+</div>
+<div class="b3" >
+	<p><a href="http://yb.upc.edu.cn:8082/" target="_blank"  class="t6">石大易签到</a></p>
+	<p class="t5">
+	石大易签到是用来统计活动或会议到场人数的轻应用。
+	<a class="t5" onClick="alert('创建项目-自动生成二维码-下载二维码-投影仪显示二维码-手机易班APP扫描二维码完成签到-创建者在首页列表详情里查看签到情况。二维码自动生成上采用互联网上免费的API提供。')"><u>点击查看使用流程</u></a>
+	</p>
+</div>
+<div class="b3" >
+	<p><a href="http://yb.upc.edu.cn:8085/" target="_blank" class="t6">石大易招领</a></p>
+	<p class="t5">石大易招领是线上发布寻物招领信息的轻应用。</p>
+</div>
+<div class="b3" >
+	<p><a href="http://yb.upc.edu.cn/sendwater/" target="_blank" class="t6">石大易送水</a></p>
+	<p class="t5">石大易送水为在校师生提供安全可靠的在线订水服务。（暂时不能使用）</p>
+</div>
+<div class="b3" >
+	<p><a href="http://yb.upc.edu.cn/project/ShowTime/" target="_blank" class="t6">生活查询</a></p>
+	<p class="t5">生活查询是综合查询学校图书馆水房的开放时间，方便石大学子生活学习的轻应用。</p>
+</div>
+<div class="b3" >
+	<p><a href="http://yb.upc.edu.cn/project/borrowmaterial" target="_blank" class="t6">易借用</a></p>
+	<p class="t5">生活查询是综合查询学校图书馆水房的开放时间，方便石大学子生活学习的轻应用。</p>
+</div>
+<div class="b3" >
+	<p><a href="http://yb.upc.edu.cn/project/tongxunlu/" target="_blank" class="t6">石大通讯录</a></p>
+	<p class="t5">收录了石大各个部门的电话。</p>
+</div>
+<div class="b3" >
+	<p><a href="http://yb.upc.edu.cn/project/ballot/#/" target="_blank" class="t6">易抽签</a></p>
+	<p class="t5">中国石油大学易班技术开发部开发的用于竞赛、答辩等活动，通过扫描二维码确定次序的轻应用。</p>
+</div>
+</body>
+</html>
